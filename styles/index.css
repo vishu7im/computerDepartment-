@@ -12,7 +12,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 2px solid rgb(46, 46, 46);
+  border-bottom: 2px solid rgb(47, 255, 28);
   margin: 2% 10%;
 }
 
@@ -30,7 +30,7 @@ html {
 }
 .text {
   text-transform: capitalize;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .heading {
   font-weight: 800;
@@ -139,8 +139,20 @@ html {
 }
 
 .weather {
-  border: 2px solid red;
-  width: 600px;
+  width: 400px;
+}
+.footer_info {
+  background-color: #ebebeb;
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 5%;
+}
+.footer-map {
+  margin: 40px 0px;
+}
+.nav_box {
+  background: #5cb874;
+  margin-bottom: 2%;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 400px) {
@@ -150,21 +162,37 @@ html {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
   html {
     font-size: 50%;
   }
-}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  html {
-    font-size: 60%;
+  .notice {
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+  }
+  .department {
+    margin: 3% 0px;
+  }
+  .detail {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dep_icon {
+    height: 80px;
+    width: 80px;
+  }
+  .Logo {
+    height: 100px;
+    width: 100px;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 825px) {
+@media only screen and (max-width: 768px) {
   html {
     font-size: 70%;
   }
