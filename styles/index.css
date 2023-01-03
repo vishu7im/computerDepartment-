@@ -1,145 +1,180 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 100%;
+html {
+  font-size: 100%;
 }
 
-
-
-
-.Header_box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 2px solid rgb(46, 46, 46);
-    margin: 2% 10%;
+.Header_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid rgb(46, 46, 46);
+  margin: 2% 10%;
 }
-
 
 /* clg logo  */
 
-.Logo{
-   
-    height: 150px;
-    width: 150px ;
+.Logo {
+  height: 150px;
+  width: 150px;
 }
 
 .Logo img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
-.text{
-    text-transform: capitalize;
-    font-size: 2rem;
-    
+.text {
+  text-transform: capitalize;
+  font-size: 2rem;
 }
-.heading{
-    font-weight: 800;
+.heading {
+  font-weight: 800;
 }
-.clg{
-    font-weight: 500;
+.clg {
+  font-weight: 500;
 }
 
-.body{
-    border: 2px solid red ;
-    width: 100vw;
-    
+.body {
+  border: 2px solid red;
+  width: 100vw;
 }
 /* media query  */
 
- /* coursel   */
-.cou{
-    border: 2px solid rgb(0, 47, 255) ;
-    height: 500px ;
+/* coursel   */
+.cou {
+  border: 2px solid rgb(0, 47, 255);
+  height: 500px;
 }
 
- /* /coursel  */
+/* /coursel  */
 
+/* about department */
+#about {
+  border-top: green 3px solid;
+  margin: 3% 8%;
+  padding: 2%;
+}
+.about_heading {
+  color: black;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  /* padding: 1.25rem 0; */
+  letter-spacing: 0.0625rem;
+  line-height: 1.5rem;
+  font-family: var(--font-lato);
+}
+/* /about department */
 
- /* about department */
- #about{
-   border-top: green 3px solid ;
-    margin: 3% 8%;
-    padding: 2%;
- }
- .about_heading{
-    color: black;
-    font-weight: 500;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    /* padding: 1.25rem 0; */
-    letter-spacing: 0.0625rem;
-    line-height: 1.5rem;
-    font-family: var(--font-lato);
- }
- /* /about department */
+/* notice  */
 
+.notice {
+  height: 400px;
+  display: flex;
+}
 
- /* notice  */
+.notice_heading {
+  padding: 3% 3%;
+  color: aliceblue;
+  height: 100%;
+  width: 50%;
+}
+.notice_content {
+  background: rgb(168, 168, 168);
+  height: 100%;
+  width: 50%;
+}
 
- .notice{
-    height: 400px;
-    display: flex;
-    
- }
+/* /notice */
 
- .notice_heading{
-    padding: 3% 3%;
-    color: aliceblue;
-    height: 100%;
-    width: 60%;
- }
- .notice_content{
-   background: rgb(168, 168, 168);
-    height: 100%;
-    width: 40%;
- }
+/* details  */
 
+.detail {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 
- /* /notice */
+.department {
+  border: 1px solid rgb(87, 87, 87);
+  border-radius: 10px;
+  width: 400px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 8px #888888;
+  cursor: pointer;
+}
+.department:hover {
+  width: 402px;
+  height: 102px;
+  box-shadow: 5px 0px 20px #888888;
+}
+
+.dep_icon {
+  height: 100px;
+  width: 100px;
+}
+.dep_icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* /details */
+
+.copyright {
+  display: flex;
+  color: white;
+  background-color: rgb(36, 35, 35);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+}
+
+.weather {
+  border: 2px solid red;
+  width: 600px;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 400px) {
-
-    html{
+  html {
     font-size: 30%;
-}
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
-    html{
+  html {
     font-size: 50%;
-}
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
-    html{
+  html {
     font-size: 60%;
-}
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 825px) {
-
-    html{
+  html {
     font-size: 70%;
-}
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
-    html{
+  html {
     font-size: 100%;
-}
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
