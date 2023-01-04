@@ -55,7 +55,7 @@ html {
 
 /* about department */
 #about {
-  border-top: green 3px solid;
+  border-top: #5cb874;
   margin: 3% 8%;
   padding: 2%;
 }
@@ -63,6 +63,7 @@ html {
   color: black;
   font-weight: 500;
   font-size: 1.5rem;
+
   text-transform: uppercase;
   /* padding: 1.25rem 0; */
   letter-spacing: 0.0625rem;
@@ -82,6 +83,7 @@ html {
   padding: 3% 3%;
   color: aliceblue;
   height: 100%;
+  background: #5cb874;
   width: 50%;
 }
 .notice_content {
@@ -99,6 +101,18 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.sub_heading {
+  padding: 2% 0%;
+}
+
+.Sub_text {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 1% 0px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
 }
 
 .department {
@@ -170,10 +184,18 @@ html {
   .notice {
     flex-direction: column;
     height: 300px;
+
     align-items: center;
+  }
+  .notice div {
+    width: 100vw;
+  }
+  .notice_content {
+    display: none;
   }
   .department {
     margin: 3% 0px;
+    width: 200px;
   }
   .detail {
     flex-direction: column;
@@ -189,6 +211,17 @@ html {
     height: 100px;
     width: 100px;
   }
+  .Header_box {
+    align-items: flex-start;
+  }
+}
+
+/* sub heading  */
+
+.sub_heading {
+  background-color: #5cb874;
+  height: 250px;
+  width: 100vw;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
