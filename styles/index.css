@@ -103,10 +103,6 @@ html {
   justify-content: space-around;
 }
 
-.sub_heading {
-  padding: 2% 0%;
-}
-
 .Sub_text {
   font-size: 3rem;
   font-weight: 700;
@@ -116,12 +112,12 @@ html {
 }
 
 .department {
-  border: 1px solid rgb(87, 87, 87);
   border-radius: 10px;
   width: 400px;
   height: 100px;
   display: flex;
   align-items: center;
+  border: 1px solid rgb(87, 87, 87);
   box-shadow: 0px 0px 8px #888888;
   cursor: pointer;
 }
@@ -168,14 +164,48 @@ html {
   background: #5cb874;
   margin-bottom: 2%;
 }
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 400px) {
-  html {
-    font-size: 30%;
-  }
+
+.card {
+  height: 22rem;
+  width: 25rem;
+  margin: 3%;
+  border: 1px solid rgb(87, 87, 87);
+  box-shadow: 0px 0px 8px #888888;
+}
+.card:hover {
+  height: 22.1rem;
+  width: 25.1rem;
+  box-shadow: 5px 0px 20px #888888;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+  padding: 2%;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
+
+/* sub heading  */
+
+.sub_heading {
+  padding: 2% 0%;
+
+  background-color: #5cb874;
+  width: 100vw;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 70%;
+  }
+  .grid {
+    grid-template-columns: auto auto;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   html {
     font-size: 50%;
@@ -214,28 +244,15 @@ html {
   .Header_box {
     align-items: flex-start;
   }
-}
-
-/* sub heading  */
-
-.sub_heading {
-  background-color: #5cb874;
-  height: 250px;
-  width: 100vw;
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-  html {
-    font-size: 70%;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  html {
-    font-size: 100%;
+  .grid {
+    grid-template-columns: auto;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 30%;
+  }
+}
