@@ -87,6 +87,9 @@ html {
   width: 50%;
 }
 .notice_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: rgb(168, 168, 168);
   height: 100%;
   width: 50%;
@@ -172,6 +175,7 @@ html {
   padding: 3%;
   border: 1px solid rgb(87, 87, 87);
   box-shadow: 0px 0px 8px #888888;
+  border-radius: 20px;
 }
 .card:hover {
   height: 20.01rem;
@@ -185,6 +189,7 @@ html {
 }
 .Card_img img {
   width: 100%;
+  padding: 1%;
   height: 100%;
   object-fit: contain;
 }
@@ -204,10 +209,9 @@ html {
 /* sub heading  */
 
 .sub_heading {
-  padding: 2% 0%;
-
   background-color: #5cb874;
   width: 100vw;
+  padding: 2% 0px;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -234,8 +238,8 @@ html {
   .notice div {
     width: 100vw;
   }
-  .notice_content {
-    display: none;
+  .notice_heading {
+    height: 20%;
   }
   .department {
     margin: 3% 0px;
@@ -260,6 +264,14 @@ html {
   }
   .grid {
     grid-template-columns: auto;
+  }
+  .card {
+    height: 25rem;
+    width: 80vw;
+  }
+  .card:hover {
+    height: 25.01rem;
+    width: 80vw;
   }
 }
 
