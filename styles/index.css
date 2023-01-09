@@ -222,6 +222,54 @@ html {
   .grid {
     grid-template-columns: auto auto;
   }
+
+  .notice_heading {
+    height: 20%;
+    width: 100vw;
+  }
+  .notice_content {
+    width: 100vw;
+  }
+  .department {
+    margin: 3% 0px;
+    width: 200px;
+  }
+  .department:hover {
+    width: 202px;
+  }
+  .detail {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dep_icon {
+    height: 80px;
+    width: 80px;
+  }
+  .Logo {
+    height: 100px;
+    width: 100px;
+  }
+  .Header_box {
+    align-items: flex-start;
+  }
+  .grid {
+    grid-template-columns: auto;
+  }
+  .card {
+    height: 25rem;
+    width: 80vw;
+  }
+  .card:hover {
+    height: 25.01rem;
+    width: 80vw;
+  }
+  .notice {
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -232,18 +280,22 @@ html {
   .notice {
     flex-direction: column;
     height: 300px;
-
     align-items: center;
   }
-  .notice div {
-    width: 100vw;
-  }
+
   .notice_heading {
     height: 20%;
+    width: 100vw;
+  }
+  .notice_content {
+    width: 100vw;
   }
   .department {
     margin: 3% 0px;
     width: 200px;
+  }
+  .department:hover {
+    width: 202px;
   }
   .detail {
     flex-direction: column;
